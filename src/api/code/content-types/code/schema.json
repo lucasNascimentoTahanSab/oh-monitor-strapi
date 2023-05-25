@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "singularName": "code",
+    "pluralName": "codes",
+    "displayName": "Code",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "current": {
+      "type": "boolean",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "alternativePath": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "order": {
+      "default": 0,
+      "required": true,
+      "type": "integer"
+    }
+  }
+}

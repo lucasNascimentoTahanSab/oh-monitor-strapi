@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "choices",
+  "info": {
+    "singularName": "choice",
+    "pluralName": "choices",
+    "displayName": "Choice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "statement": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

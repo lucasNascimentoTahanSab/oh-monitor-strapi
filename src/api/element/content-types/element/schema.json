@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elements",
+  "info": {
+    "singularName": "element",
+    "pluralName": "elements",
+    "displayName": "Element",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "p",
+        "ol",
+        "ul",
+        "li",
+        "snippet",
+        "exercise"
+      ],
+      "default": "p",
+      "required": true
+    },
+    "value": {
+      "type": "text",
+      "required": false
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "elements"
+    },
+    "element": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::element.element",
+      "inversedBy": "elements"
+    },
+    "elements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::element.element",
+      "mappedBy": "element"
+    },
+    "exercises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise"
+    },
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "snippet": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::snippet.snippet"
+    }
+  }
+}

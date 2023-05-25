@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigation_items",
+  "info": {
+    "singularName": "navigation-item",
+    "pluralName": "navigation-items",
+    "displayName": "Navigation item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "navigationItem": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::navigation-item.navigation-item",
+      "inversedBy": "navigationItems"
+    },
+    "navigationItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navigation-item.navigation-item",
+      "mappedBy": "navigationItem"
+    },
+    "navigation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::navigation.navigation",
+      "inversedBy": "navigationItems"
+    },
+    "current": {
+      "type": "boolean",
+      "default": false
+    },
+    "uidParentNavigationItem": {
+      "type": "string",
+      "required": false
+    },
+    "open": {
+      "type": "boolean",
+      "default": true
+    },
+    "uid": {
+      "type": "uid",
+      "required": true
+    },
+    "uidParent": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
