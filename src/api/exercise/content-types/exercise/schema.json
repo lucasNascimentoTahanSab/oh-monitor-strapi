@@ -42,6 +42,9 @@
     "answer": {
       "type": "text",
       "required": false
+    },
+    "args": {
+      "type": "text"
     }
   }
 }
