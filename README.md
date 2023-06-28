@@ -8,7 +8,7 @@ No diretório do projeto, execute:
 
 ### `npm run develop`
 
-Para iniciar o Strapi localmente na porta [1337](http://127.0.0.1:1337/api). Defina as variáveis de ambiente no repositório [oh-monitor](https://github.com/nasciontem/oh-monitor) clonado:
+Para iniciar o Strapi localmente na porta [1337](http://127.0.0.1:1337/api). Defina as variáveis de ambiente no repositório [oh-monitor](https://github.com/lucasNascimentoTahanSab/oh-monitor) clonado:
 
 ### `ST_ENDPOINT`
 
