@@ -1,57 +1,23 @@
-# 🚀 Getting started with Strapi
+# Strapi do Monitor
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+No âmbito da Ciência da Computação, percebe-se ainda uma dificuldade latente de estudantes dos primeiros períodos quanto a aprendizagem de algoritmos e estruturas de dados. Destinadas ao ciclo básico de computação, plataformas como DS-Hacker e Blocks4DS apresentam ferramentas que auxiliam o ensino de Árvores Binárias de Busca (ABBs). Porém não são observadas plataformas que agreguem em sua estrutura, além do conteúdo textual e avaliações por questionário e práticas, visualização dinâmica dos algoritmos executados. Tendo isso em vista, neste trabalho foi desenvolvida uma plataforma web, chamada Monitor, que auxilia o ensino de ABBs e apresenta estas funcionalidades, estruturada com base na Taxonomia de Bloom para o aprendizado. O software desenvolvido foi avaliado por meio de feedbacks e interações com a plataforma de 12 alunos de Ciência da Computação da PUC Minas que se voluntariaram para testá-lo. Foram obtidos feedbacks positivos dos usuários e apontadas melhorias, sendo a plataforma validada como uma ferramenta auxiliar ao ensino de ABBs.
 
-### `develop`
+## Execução
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+No diretório do projeto, execute:
 
-```
-npm run develop
-# or
-yarn develop
-```
+### `npm run develop`
 
-### `start`
+Para iniciar o Strapi localmente na porta [http://127.0.0.1:1337/api](1337). Defina as variáveis de ambiente no repositório [https://github.com/nasciontem/oh-monitor](oh-monitor) clonado:
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+### `ST_ENDPOINT`
 
-```
-npm run start
-# or
-yarn start
-```
+Com o endpoint de execução, originalmente [http://127.0.0.1:1337/api](http://127.0.0.1:1337/api).
 
-### `build`
+### `ST_TOKEN`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Com o token de acesso liberado pela Strapi.
 
-```
-npm run build
-# or
-yarn build
-```
+### `ST_PASS`
 
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Gerado aleatoriamente.
